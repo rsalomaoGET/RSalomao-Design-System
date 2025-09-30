@@ -1,0 +1,386 @@
+/* 🎨 RSalomao Design System - Arquivo Principal */
+/* Versão: 1.0.0 */
+/* Importe este arquivo único em seus projetos */
+
+/* 📋 Importações dos módulos */
+@import './rs-tokens.css';
+@import './rs-components.css';
+@import './rs-utilities.css';
+
+/* 🌙 Ant Design Dark Theme Overrides */
+/* Baseado no P2R POC com melhorias */
+
+/* 📐 Layout */
+.ant-layout {
+  background: transparent !important;
+}
+
+.ant-layout-header {
+  background: var(--rs-bg-glass) !important;
+  backdrop-filter: var(--rs-blur) !important;
+  border-bottom: 1px solid var(--rs-border) !important;
+  box-shadow: var(--rs-shadow-md) !important;
+}
+
+.ant-layout-sider {
+  background: var(--rs-bg-secondary) !important;
+  border-right: 1px solid var(--rs-border) !important;
+}
+
+.ant-layout-content {
+  background: transparent !important;
+}
+
+/* 📋 Menu */
+.ant-menu-dark {
+  background: transparent !important;
+  border-right: none !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+  color: var(--rs-text-secondary) !important;
+  border-radius: var(--rs-radius-md) !important;
+  margin: 4px 8px !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background: var(--rs-gradient-primary) !important;
+  color: white !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background: var(--rs-bg-glass) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+/* 📄 Cards */
+.ant-card {
+  background: var(--rs-bg-card) !important;
+  backdrop-filter: var(--rs-blur) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-lg) !important;
+  box-shadow: var(--rs-shadow-md) !important;
+}
+
+.ant-card-head {
+  background: transparent !important;
+  border-bottom: 1px solid var(--rs-border) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-card-body {
+  color: var(--rs-text-primary) !important;
+}
+
+/* 📝 Inputs */
+.ant-input,
+.ant-input-password,
+.ant-select-selector,
+.ant-picker,
+.ant-input-number,
+.ant-textarea {
+  background: var(--rs-bg-input) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-md) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-input:focus,
+.ant-input-password:focus,
+.ant-select-focused .ant-select-selector,
+.ant-picker:hover,
+.ant-picker-focused,
+.ant-input-number:focus,
+.ant-textarea:focus {
+  border-color: var(--rs-border-focus) !important;
+  box-shadow: var(--rs-shadow-glow) !important;
+}
+
+.ant-input::placeholder,
+.ant-textarea::placeholder {
+  color: var(--rs-text-muted) !important;
+}
+
+/* 🔘 Botões */
+.ant-btn {
+  border-radius: var(--rs-radius-md) !important;
+  font-weight: var(--rs-font-medium) !important;
+}
+
+.ant-btn-primary {
+  background: var(--rs-gradient-primary) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.ant-btn-primary:hover {
+  background: var(--rs-gradient-primary-hover) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: var(--rs-shadow-md) !important;
+}
+
+.ant-btn-default {
+  background: rgba(15, 27, 53, 0.8) !important;
+  border: 1px solid var(--rs-border) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-btn-default:hover {
+  background: var(--rs-bg-glass) !important;
+  border-color: var(--rs-border-focus) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+/* 📊 Tabelas */
+.ant-table {
+  background: transparent !important;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--rs-bg-glass) !important;
+  border-bottom: 1px solid var(--rs-border) !important;
+  color: var(--rs-text-secondary) !important;
+  font-weight: var(--rs-font-semibold) !important;
+}
+
+.ant-table-tbody > tr > td {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border-bottom: 1px solid var(--rs-border) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: var(--rs-bg-glass) !important;
+}
+
+.ant-table-tbody > tr > td:first-child {
+  border-top-left-radius: var(--rs-radius-md) !important;
+  border-bottom-left-radius: var(--rs-radius-md) !important;
+}
+
+.ant-table-tbody > tr > td:last-child {
+  border-top-right-radius: var(--rs-radius-md) !important;
+  border-bottom-right-radius: var(--rs-radius-md) !important;
+}
+
+/* 📱 Modais */
+.ant-modal-content {
+  background: var(--rs-bg-secondary) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-lg) !important;
+  box-shadow: var(--rs-shadow-xl) !important;
+}
+
+.ant-modal-header {
+  background: transparent !important;
+  border-bottom: 1px solid var(--rs-border) !important;
+}
+
+.ant-modal-title {
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-modal-body {
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-modal-mask {
+  background: var(--rs-bg-overlay) !important;
+  backdrop-filter: var(--rs-blur-sm) !important;
+}
+
+/* 🏷️ Tags */
+.ant-tag {
+  background: rgba(15, 23, 42, 0.8) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-sm) !important;
+  color: var(--rs-text-primary) !important;
+}
+
+/* 📋 Select Dropdown */
+.ant-select-dropdown {
+  background: var(--rs-bg-secondary) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-md) !important;
+  box-shadow: var(--rs-shadow-md) !important;
+}
+
+.ant-select-item {
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-select-item-option-selected {
+  background: var(--rs-bg-glass) !important;
+  color: var(--rs-primary) !important;
+}
+
+.ant-select-item:hover {
+  background: var(--rs-bg-glass) !important;
+}
+
+/* 📊 Estatísticas */
+.ant-statistic-title {
+  color: var(--rs-text-secondary) !important;
+}
+
+.ant-statistic-content {
+  color: var(--rs-text-primary) !important;
+}
+
+/* 📋 Form Labels */
+.ant-form-item-label > label {
+  color: var(--rs-text-secondary) !important;
+  font-weight: var(--rs-font-medium) !important;
+}
+
+/* 📋 Descriptions */
+.ant-descriptions-item-label {
+  color: var(--rs-text-secondary) !important;
+  font-weight: var(--rs-font-medium) !important;
+}
+
+.ant-descriptions-item-content {
+  color: var(--rs-text-primary) !important;
+}
+
+/* ⏰ Timeline */
+.ant-timeline-item-content {
+  color: var(--rs-text-primary) !important;
+}
+
+/* 🔄 Spin */
+.ant-spin-dot-item {
+  background-color: var(--rs-primary) !important;
+}
+
+/* 🔔 Notifications */
+.ant-notification {
+  background: var(--rs-bg-secondary) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-lg) !important;
+  box-shadow: var(--rs-shadow-lg) !important;
+}
+
+.ant-notification-notice-message {
+  color: var(--rs-text-primary) !important;
+}
+
+.ant-notification-notice-description {
+  color: var(--rs-text-secondary) !important;
+}
+
+/* 🎯 Tooltip */
+.ant-tooltip-inner {
+  background: var(--rs-bg-secondary) !important;
+  color: var(--rs-text-primary) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-md) !important;
+}
+
+.ant-tooltip-arrow::before {
+  background: var(--rs-bg-secondary) !important;
+  border: 1px solid var(--rs-border) !important;
+}
+
+/* 📊 Progress */
+.ant-progress-bg {
+  background: var(--rs-gradient-primary) !important;
+}
+
+.ant-progress-inner {
+  background: rgba(15, 23, 42, 0.8) !important;
+}
+
+/* 🎨 Classes Customizadas Específicas */
+.rs-sap-code {
+  font-family: var(--rs-font-mono) !important;
+  background: var(--rs-bg-code) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-sm) !important;
+  padding: 2px 6px !important;
+  color: var(--rs-text-code) !important;
+  font-size: var(--rs-text-xs) !important;
+  margin-left: 6px !important;
+}
+
+.rs-glass-card {
+  background: var(--rs-bg-glass) !important;
+  backdrop-filter: var(--rs-blur) !important;
+  border: 1px solid var(--rs-border) !important;
+  border-radius: var(--rs-radius-lg) !important;
+  box-shadow: var(--rs-shadow-md) !important;
+}
+
+.rs-gradient-text {
+  background: var(--rs-gradient-primary) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* 🎯 Status específicos (compatibilidade P2R) */
+.rs-status-rascunho { color: var(--rs-warning) !important; }
+.rs-status-enviada { color: var(--rs-info) !important; }
+.rs-status-aprovada { color: var(--rs-success) !important; }
+.rs-status-rejeitada { color: var(--rs-error) !important; }
+
+/* 📱 Responsividade Global */
+@media (max-width: 768px) {
+  .ant-card {
+    margin: var(--rs-space-2) !important;
+  }
+  
+  .ant-table {
+    font-size: var(--rs-text-xs) !important;
+  }
+  
+  .ant-btn {
+    padding: var(--rs-space-2) var(--rs-space-4) !important;
+    font-size: var(--rs-text-xs) !important;
+  }
+}
+
+/* 🎨 Animações personalizadas */
+@keyframes rs-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rs-fade-in {
+  animation: rs-fade-in var(--rs-transition-normal) ease-out;
+}
+
+@keyframes rs-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rs-slide-up {
+  animation: rs-slide-up var(--rs-transition-slow) ease-out;
+}
+
+/* 🎯 Print styles */
+@media print {
+  .rs-card {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+  
+  .rs-btn {
+    display: none !important;
+  }
+}

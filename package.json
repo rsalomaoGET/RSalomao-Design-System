@@ -1,0 +1,44 @@
+{
+  "name": "@rsalomao/design-system",
+  "version": "1.0.0",
+  "description": "Design system moderno e profissional baseado no tema dark glassmorphism",
+  "main": "css/rs-design-system.css",
+  "files": [
+    "css/",
+    "components/",
+    "tokens/",
+    "templates/",
+    "docs/"
+  ],
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "test": "echo 'No tests specified'",
+    "docs": "echo 'Documentation available in docs/ folder'"
+  },
+  "keywords": [
+    "design-system",
+    "css",
+    "react",
+    "ant-design",
+    "dark-theme",
+    "glassmorphism",
+    "enterprise",
+    "ui-components"
+  ],
+  "author": "RSalomao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsalomao/RSalomao-Design-System.git"
+  },
+  "homepage": "https://github.com/rsalomao/RSalomao-Design-System#readme",
+  "bugs": {
+    "url": "https://github.com/rsalomao/RSalomao-Design-System/issues"
+  },
+  "peerDependencies": {
+    "antd": "^5.0.0",
+    "@ant-design/icons": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

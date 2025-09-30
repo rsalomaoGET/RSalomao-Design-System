@@ -1,0 +1,154 @@
+/* 🎨 RSalomao Design System - Tokens */
+/* Versão: 1.0.0 */
+/* Baseado no P2R POC Dark Theme */
+
+:root {
+  /* 🌙 Backgrounds */
+  --rs-bg-primary: #0b1220;
+  --rs-bg-secondary: #111a2b;
+  --rs-bg-tertiary: #0f1b2e;
+  --rs-bg-card: rgba(255,255,255,0.02);
+  --rs-bg-glass: rgba(255,255,255,0.05);
+  --rs-bg-glass-strong: rgba(255,255,255,0.08);
+  --rs-bg-overlay: rgba(3,10,20,0.7);
+  --rs-bg-input: rgba(11, 20, 38, 0.8);
+  --rs-bg-code: rgba(12, 20, 38, 0.8);
+
+  /* 🔤 Textos */
+  --rs-text-primary: #e6edf6;
+  --rs-text-secondary: #8391a8;
+  --rs-text-muted: #9fb0c7;
+  --rs-text-inverse: #0a0f1c;
+  --rs-text-code: #7aa2ff;
+
+  /* 🎯 Cores de Destaque */
+  --rs-primary: #2dd4bf;
+  --rs-secondary: #3556ff;
+  --rs-success: #10b981;
+  --rs-warning: #f59e0b;
+  --rs-error: #ef4444;
+  --rs-info: #3b82f6;
+
+  /* 🔲 Bordas */
+  --rs-border: #1e293b;
+  --rs-border-light: #334155;
+  --rs-border-focus: #3556ff;
+  --rs-border-hover: #2563eb;
+
+  /* 📝 Tipografia */
+  --rs-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --rs-font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+
+  /* 📏 Tamanhos de Fonte */
+  --rs-text-xs: 0.75rem;    /* 12px */
+  --rs-text-sm: 0.875rem;   /* 14px */
+  --rs-text-base: 1rem;     /* 16px */
+  --rs-text-lg: 1.125rem;   /* 18px */
+  --rs-text-xl: 1.25rem;    /* 20px */
+  --rs-text-2xl: 1.5rem;    /* 24px */
+  --rs-text-3xl: 1.875rem;  /* 30px */
+  --rs-text-4xl: 2.25rem;   /* 36px */
+
+  /* ⚖️ Pesos de Fonte */
+  --rs-font-light: 300;
+  --rs-font-normal: 400;
+  --rs-font-medium: 500;
+  --rs-font-semibold: 600;
+  --rs-font-bold: 700;
+
+  /* 📐 Espaçamentos */
+  --rs-space-0: 0;
+  --rs-space-1: 0.25rem;   /* 4px */
+  --rs-space-2: 0.5rem;    /* 8px */
+  --rs-space-3: 0.75rem;   /* 12px */
+  --rs-space-4: 1rem;      /* 16px */
+  --rs-space-5: 1.25rem;   /* 20px */
+  --rs-space-6: 1.5rem;    /* 24px */
+  --rs-space-8: 2rem;      /* 32px */
+  --rs-space-10: 2.5rem;   /* 40px */
+  --rs-space-12: 3rem;     /* 48px */
+  --rs-space-16: 4rem;     /* 64px */
+  --rs-space-20: 5rem;     /* 80px */
+
+  /* 🔄 Border Radius */
+  --rs-radius-none: 0;
+  --rs-radius-sm: 6px;
+  --rs-radius-md: 10px;
+  --rs-radius-lg: 16px;
+  --rs-radius-xl: 24px;
+  --rs-radius-2xl: 32px;
+  --rs-radius-full: 9999px;
+
+  /* ✨ Sombras */
+  --rs-shadow-sm: 0 2px 8px rgba(0,0,0,0.15);
+  --rs-shadow-md: 0 10px 30px rgba(0,0,0,0.35);
+  --rs-shadow-lg: 0 20px 40px rgba(0,0,0,0.5);
+  --rs-shadow-xl: 0 25px 50px rgba(0,0,0,0.6);
+  --rs-shadow-glow: 0 0 0 3px rgba(53,86,255,0.15);
+  --rs-shadow-glow-success: 0 0 0 3px rgba(16,185,129,0.15);
+  --rs-shadow-glow-error: 0 0 0 3px rgba(239,68,68,0.15);
+
+  /* 🌊 Glassmorphism */
+  --rs-blur: blur(10px);
+  --rs-blur-sm: blur(5px);
+  --rs-blur-lg: blur(15px);
+  --rs-blur-xl: blur(20px);
+
+  /* 🌈 Gradientes */
+  --rs-gradient-primary: linear-gradient(90deg, #3556ff, #2dd4bf);
+  --rs-gradient-primary-hover: linear-gradient(90deg, #4c6fff, #45e5d3);
+  --rs-gradient-secondary: linear-gradient(135deg, #667eea, #764ba2);
+  --rs-gradient-success: linear-gradient(90deg, #10b981, #059669);
+  --rs-gradient-warning: linear-gradient(90deg, #f59e0b, #d97706);
+  --rs-gradient-error: linear-gradient(90deg, #ef4444, #dc2626);
+  --rs-gradient-bg: linear-gradient(180deg, #0a0f1c 0%, #0e1627 40%, #0a0f1c 100%);
+
+  /* 📱 Breakpoints */
+  --rs-screen-sm: 640px;
+  --rs-screen-md: 768px;
+  --rs-screen-lg: 1024px;
+  --rs-screen-xl: 1280px;
+  --rs-screen-2xl: 1536px;
+
+  /* ⏱️ Transições */
+  --rs-transition-fast: 0.15s ease;
+  --rs-transition-normal: 0.2s ease;
+  --rs-transition-slow: 0.3s ease;
+
+  /* 📊 Z-Index */
+  --rs-z-dropdown: 1000;
+  --rs-z-sticky: 1020;
+  --rs-z-fixed: 1030;
+  --rs-z-modal-backdrop: 1040;
+  --rs-z-modal: 1050;
+  --rs-z-popover: 1060;
+  --rs-z-tooltip: 1070;
+  --rs-z-toast: 1080;
+}
+
+/* 🌙 Dark Theme Global Styles */
+body {
+  background: var(--rs-gradient-bg) !important;
+  color: var(--rs-text-primary) !important;
+  font-family: var(--rs-font-sans) !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 📱 Responsive Font Sizes */
+@media (max-width: 640px) {
+  :root {
+    --rs-text-xs: 0.7rem;
+    --rs-text-sm: 0.8rem;
+    --rs-text-base: 0.9rem;
+    --rs-text-lg: 1rem;
+    --rs-text-xl: 1.1rem;
+    --rs-text-2xl: 1.3rem;
+    --rs-text-3xl: 1.6rem;
+  }
+}
